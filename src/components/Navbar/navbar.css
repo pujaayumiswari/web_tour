@@ -1,0 +1,65 @@
+
+.nav {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin-left: 10px;
+  height: 60px;
+ color: white;
+
+}
+.nav-list {
+  list-style: none;
+  display: flex; 
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.nav-item {
+  margin-right: 20px; 
+}
+
+
+.navbarSection.scrolled {
+  background-color: rgba(255, 255, 255, 0.7); 
+  transition: background-color 0.3s; 
+}
+
+
+.navbarSection {
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Hide the navigation links by default on mobile */
+  }
+
+  .nav.open {
+    display: flex; /* Show the navigation links when the nav is open */
+    flex-direction: column; /* Change layout to column on mobile */
+  }
+
+  .toggle-button {
+    display: block; /* Show the toggle button on mobile */
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+.toggle-button {
+  display: none; 
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+}
+
